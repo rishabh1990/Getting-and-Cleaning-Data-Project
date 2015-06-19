@@ -10,19 +10,17 @@
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity. Its Range is 1 to 30. 
 - 'test/subject_test.txt" : Each row identifies the subject who performed the activity. Its Range is 1 to 30. 
 
-## Varaible names can be obtained by reading "Features.txt" file and subsequently selecting the mean() and std() measurement names
+## Variable names:
+1. train_data, test_data, subject_train, subject_test, activity_train, activity_test, var_names: all the variable from downloading the appropriate files.
+2. merged_data, subject_data, activity_data: Merging the data using "rbind" command
+3. mean_std_features: filtering the mean() and std() measurement names using grep command.
+4. data: Merging merged_data, subject_data and activity_data using cbind command.
+5. means_data: calculating the averages of each variable for each activity and each subject using aggregate and order cmd.
+6. Finally a tidy data is created "tidy_data.txt" using write.table() command
+
+## Feature names can be obtained by reading "Features.txt" file and subsequently selecting the mean() and std() measurement names.
 
 ## Activity names can be edited using the following commands:
-activity_data[activity_data=="1"]<- "WALKING"
-activity_data[activity_data=="2"]<- "WALKING_UPSTAIRS"
-activity_data[activity_data=="3"]<- "WALKING_DOWNSTAIRS"
-activity_data[activity_data=="4"]<- "SITTING"
-activity_data[activity_data=="5"]<- "STANDING"
-activity_data[activity_data=="6"]<- "LAYING"
+activity_data[activity_data=="1"]<- "WALKING" 
+same command can be used to edit other activity names
 The names are obtained by reading 'activity_labels.txt' file.
-
-## Names of the the Subject and Activity data are edited using names() command.
-colnames(subject_data)<- "Subjects"
-colnames(activity_data)<- "Acts"
-
-## Finally a tidy data is created "tidy_data.txt" using write.table() command
