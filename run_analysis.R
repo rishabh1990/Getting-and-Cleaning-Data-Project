@@ -1,3 +1,5 @@
+setwd("C:/Users/Tycoon/Desktop/Coursera/Get&Clean_Data/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset")
+list.files(recursive=TRUE)
 # Step 1- Merging the training and the test sets
 # a) Merging the training and testing data sets using rbind
 train_data<- read.table("train/X_train.txt")
