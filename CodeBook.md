@@ -21,6 +21,6 @@
 ### Feature names can be obtained by reading "Features.txt" file and subsequently selecting the mean() and std() measurement names.
 
 ## Activity names can be edited using the following commands:
-activity_data[activity_data=="1"]<- "WALKING" 
-same command can be used to edit other activity names
+activity_data[activity_data=="1"]<- "WALKING". 
+Same command can be used to edit other activity names
 The names are obtained by reading 'activity_labels.txt' file.
