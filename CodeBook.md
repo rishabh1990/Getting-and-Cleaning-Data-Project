@@ -18,7 +18,7 @@
 5. means_data: calculating the averages of each variable for each activity and each subject using aggregate and order cmd.
 6. Finally a tidy data is created "tidy_data.txt" using write.table() command
 
-## Feature names can be obtained by reading "Features.txt" file and subsequently selecting the mean() and std() measurement names.
+### Feature names can be obtained by reading "Features.txt" file and subsequently selecting the mean() and std() measurement names.
 
 ## Activity names can be edited using the following commands:
 activity_data[activity_data=="1"]<- "WALKING" 
