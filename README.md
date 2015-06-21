@@ -10,4 +10,4 @@
  
 ###Finally we will create the file tidy_data.txt using write.table() command.
 
-###The description of all the variables can be found in codeBook.cmd
+###The description of all the variables can be found in CodeBook.cmd
