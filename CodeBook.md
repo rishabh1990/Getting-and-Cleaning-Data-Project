@@ -11,11 +11,11 @@
 - 'test/subject_test.txt" : Each row identifies the subject who performed the activity. Its Range is 1 to 30. 
 
 ## Variable names:
-1. train_data, test_data, subject_train, subject_test, activity_train, activity_test, var_names: all the variable from downloading the appropriate files.
+1. train_data, test_data, subject_train, subject_test, activity_train, activity_test, var_names: List of all the variable names created by downloading the respective files from Samsung Data.
 2. merged_data, subject_data, activity_data: Merging the data using "rbind" command
 3. mean_std_features: filtering the mean() and std() measurement names using grep command.
 4. data: Merging merged_data, subject_data and activity_data using cbind command.
-5. means_data: calculating the averages of each variable for each activity and each subject using aggregate and order cmd.
+5. means_data: Averaging each variable for each activity and each subject using aggregate and order command.
 6. Finally a tidy data is created "tidy_data.txt" using write.table() command
 
 ### Feature names can be obtained by reading "Features.txt" file and subsequently selecting the mean() and std() measurement names.
